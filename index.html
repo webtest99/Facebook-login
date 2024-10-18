@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            flex-direction: column;
+        }
+
+        /* Blue top bar */
+        .blue-bar {
+            background-color: #1877f2;
+            height: 70px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 20px; /* Padding for the logo */
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        /* Facebook logo style */
+        .facebook-logo {
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Login box styling */
+        .login-box {
+            background-color: white;
+            padding: 30px;
+            width: 100%;
+            max-width: 350px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 100px; /* Margin to push the login box below the blue bar */
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Label styling */
+        .label {
+            text-align: center;
+            margin-bottom: 5px;
+            color: #555;
+            font-size: 14px;
+            font-weight: bold;
+            display: block;
+        }
+
+        /* Input fields styling */
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            text-align: center; /* Center the text inside the input field */
+        }
+
+        /* Log In button styling */
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-box button:hover {
+            background-color: #166fe5;
+        }
+
+        /* Forgot password and Sign up links */
+        .forgot-signup-container {
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .forgot-password {
+            font-size: 14px;
+            color: #1877f2;
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .sign-up {
+            font-size: 14px;
+            color: #1877f2;
+            text-decoration: none;
+            float: right;
+        }
+
+        .sign-up:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Blue Bar with Facebook Logo -->
+    <div class="blue-bar">
+        <img src="facebook-logo.png" alt="Facebook Logo" class="facebook-logo"> <!-- Replace with your logo image -->
+        <span style="font-size: 24px; font-weight: bold; color: white; margin-left: 10px;">Facebook</span>
+    </div>
+
+    <!-- Login Box -->
+    <div class="login-box">
+        <h2>Facebook</h2>
+
+        <!-- Label and input fields -->
+        <label class="label" for="email">Username or Email</label>
+        <input type="text" id="email" name="email" required>
+
+        <label class="label" for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <!-- Log In button -->
+        <button type="submit">Log In</button>
+
+        <!-- Forgot password and Sign up links -->
+        <div class="forgot-signup-container">
+            <a href="#" class="forgot-password">Forgotten password?</a>
+            <a href="#" class="sign-up">Sign Up for Facebook</a>
+        </div>
+    </div>
+
+</body>
+</html>
